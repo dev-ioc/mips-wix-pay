@@ -1,6 +1,26 @@
+// // @ts-check
+// import { defineConfig } from "astro/config";
+// import wix from "@wix/astro";
+// import react from "@astrojs/react";
+// import cloudflare from "@astrojs/cloudflare";
+
+// import tailwindcss from "@tailwindcss/vite";
+
+// export default defineConfig({
+//   output: "server",
+//   adapter: cloudflare(),
+//   integrations: [wix(), react()],
+//   image: { domains: ["static.wixstatic.com"] },
+//   security: { checkOrigin: false },
+//   devToolbar: { enabled: false },
+
+//   vite: {
+//     plugins: [tailwindcss()],
+//   },
+// });
 // @ts-check
-import { defineConfig } from 'astro/config';
-import wix from '@wix/astro';
+import { defineConfig } from "astro/config";
+import wix from "@wix/astro";
 import react from "@astrojs/react";
 import cloudflare from "@astrojs/cloudflare";
 
@@ -10,5 +30,5 @@ export default defineConfig({
   integrations: [wix(), react()],
   image: { domains: ["static.wixstatic.com"] },
   security: { checkOrigin: false },
-  devToolbar: { enabled: false }
+  devToolbar: { enabled: false },
 });
