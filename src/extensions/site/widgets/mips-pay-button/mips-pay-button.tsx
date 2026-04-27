@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-class MipsPay extends HTMLElement {
+class MipsPayButton extends HTMLElement {
   static get observedAttributes() {
     return [
       "public-key",
@@ -459,8 +459,8 @@ class MipsPay extends HTMLElement {
 }
 
 // Enregistrer le Web Component
-if (!customElements.get("mips-pay")) {
-  customElements.define("mips-pay", MipsPay);
+if (!customElements.get("mips-pay-button")) {
+  customElements.define("mips-pay-button", MipsPayButton);
 }
 
-export default MipsPay;
+export default MipsPayButton;

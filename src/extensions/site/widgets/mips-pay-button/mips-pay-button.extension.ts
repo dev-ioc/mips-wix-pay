@@ -21,7 +21,7 @@ export default extensions.customElement({
     },
   ],
 
-  tagName: "mips-pay",
+  tagName: "mips-pay-button",
   element: "./extensions/site/widgets/mips-pay-button/mips-pay-button.tsx",
   settings:
     "./extensions/site/widgets/mips-pay-button/mips-pay-button.panel.tsx",
