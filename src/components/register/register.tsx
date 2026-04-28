@@ -28,15 +28,18 @@ const Register = () => {
   const onSubmit = async (data: FormData) => {
     setIsSaving(true);
     try {
-      const userRes = await fetch("http://localhost:3000/api/user", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          password: data.password,
-        }),
-      });
+      const userRes = await fetch(
+        "https://mips-wix-backend.onrender.com/api/user",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            password: data.password,
+          }),
+        },
+      );
       if (!userRes.ok) {
         const errorData = await userRes.json();
         toast.error("Erreur création utilisateur : " + errorData.error);

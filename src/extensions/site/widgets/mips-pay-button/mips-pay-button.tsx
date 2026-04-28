@@ -1,5 +1,4 @@
-// mips-pay-button.tsx - Version corrigée
-const BACKEND = "http://localhost:3000";
+const BACKEND = "https://mips-wix-backend.onrender.com";
 
 declare global {
   interface Window {
